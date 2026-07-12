@@ -1534,3 +1534,45 @@ body::after {
     transform: none;
   }
 }
+/* =========================================================
+   IMAGES MANQUANTES
+========================================================= */
+
+.image-missing,
+.portrait-missing {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(90, 64, 49, 0.08),
+      rgba(255, 255, 255, 0.34)
+    ),
+    var(--cream);
+}
+
+.image-missing::after {
+  content: "Image du projet à ajouter";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  color: var(--taupe);
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portrait-missing::after {
+  content: "Portrait à ajouter";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--taupe);
+  font-family: "Italiana", serif;
+  font-size: 24px;
+}
