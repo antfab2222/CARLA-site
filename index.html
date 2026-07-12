@@ -13,11 +13,10 @@
     content="Portfolio de Carla Ducrocq — Architecture intérieure, scénographie de luxe et design d’espace."
   >
 
-  <meta name="theme-color" content="#f4f0e9">
+  <meta name="theme-color" content="#fbf8f3">
 
   <title>Carla Ducrocq | Architecture intérieure & scénographie</title>
 
-  <!-- Typographies -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -26,38 +25,30 @@
     rel="stylesheet"
   >
 
-  <!-- CSS principal -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- JavaScript principal -->
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-  <!-- Grain subtil -->
+  <!-- Texture légère -->
   <div class="noise" aria-hidden="true"></div>
 
-  <!-- Halo de souris -->
-  <div class="pointer-light" aria-hidden="true"></div>
-
-  <!-- =====================================================
-       LOADER
-  ====================================================== -->
-
+  <!-- Loader -->
   <div class="loader" aria-hidden="true">
 
-    <div class="loader__inner">
+    <div class="loader__content">
 
-      <div class="loader__monogram">
+      <div class="loader__initials">
         CD
       </div>
 
-      <div class="loader__line">
+      <div class="loader__rule">
         <span></span>
       </div>
 
-      <p class="loader__label">
+      <p>
         Carla Ducrocq
       </p>
 
@@ -65,201 +56,153 @@
 
   </div>
 
-  <!-- =====================================================
-       NAVIGATION
-  ====================================================== -->
+  <!-- Navigation -->
+  <header class="header">
 
-  <header class="site-header">
+    <a href="index.html" class="header__brand">
+      Carla Ducrocq
+    </a>
 
-    <nav class="nav" aria-label="Navigation principale">
+    <nav class="header__nav" aria-label="Navigation principale">
 
-      <a href="index.html" class="nav__brand">
-        Carla Ducrocq
-      </a>
-
-      <button
-        class="nav__toggle"
-        type="button"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav__links">
-
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="cv.html">CV</a>
-        <a href="#contact">Contact</a>
-
-      </div>
-
-    </nav>
-
-    <div class="mobile-menu" id="mobile-menu">
-
-      <a href="#about">À propos</a>
+      <a href="#studio">Studio</a>
       <a href="#projects">Projets</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="cv.html">CV</a>
-      <a href="#contact">Contact</a>
 
-    </div>
+    </nav>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
 
   </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu">
+
+    <a href="#studio">Studio</a>
+    <a href="#projects">Projets</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="cv.html">CV</a>
+    <a href="#contact">Contact</a>
+
+  </div>
 
   <main>
 
     <!-- =====================================================
-         HERO
+         HERO ÉDITORIAL
     ====================================================== -->
 
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="editorial-hero">
 
-      <div class="hero__content">
+      <div class="editorial-hero__index">
+        <span>Portfolio</span>
+        <span>2026</span>
+      </div>
 
-        <p class="hero__eyebrow intro-element">
+      <div class="editorial-hero__title">
+
+        <p class="editorial-hero__eyebrow">
           Architecture intérieure · Scénographie de luxe
         </p>
 
-        <h1 class="hero__title intro-element" id="hero-title">
-
+        <h1>
           <span>Carla</span>
           <span>Ducrocq</span>
-
         </h1>
 
-        <p class="hero__subtitle intro-element">
+      </div>
+
+      <div class="editorial-hero__portrait">
+
+        <div class="editorial-hero__image-frame">
+
+          <img
+            src="assets/images/portrait-carla.jpg"
+            alt="Portrait de Carla Ducrocq"
+            class="editorial-hero__image"
+          >
+
+        </div>
+
+        <p class="editorial-hero__caption">
+          Nice · France
+        </p>
+
+      </div>
+
+      <div class="editorial-hero__statement">
+
+        <p>
           Je compose des espaces sensibles où la matière,
           la lumière et le récit transforment chaque lieu
           en expérience.
         </p>
 
-        <div class="hero__actions intro-element">
+        <div class="editorial-hero__actions">
 
-          <a href="portfolio.html" class="button button--brown">
-
-            <span>Découvrir le portfolio</span>
-
+          <a href="portfolio.html" class="editorial-link">
+            Voir le portfolio
             <span aria-hidden="true">↗</span>
-
           </a>
 
-          <a href="cv.html" class="button button--outline">
-
-            <span>Consulter mon CV</span>
-
+          <a href="cv.html" class="editorial-link">
+            Découvrir mon parcours
             <span aria-hidden="true">→</span>
-
           </a>
 
         </div>
 
       </div>
 
-      <!-- Visuel / portrait -->
-
-      <aside class="hero__visual intro-element">
-
-        <div class="hero__visual-header">
-
-          <span>Portfolio</span>
-          <span>2026</span>
-
-        </div>
-
-        <div class="hero__image-wrap">
-
-          <img
-            src="assets/images/portrait-carla.jpg"
-            alt="Portrait de Carla Ducrocq"
-            class="hero__image"
-          >
-
-          <div class="hero__image-overlay" aria-hidden="true"></div>
-
-          <p class="hero__image-caption">
-            Matière · Lumière · Narration
-          </p>
-
-        </div>
-
-        <div class="hero__visual-footer">
-
-          <p>
-            Architecture intérieure, scénographie et design d’espace.
-          </p>
-
-          <span>Nice · France</span>
-
-        </div>
-
-      </aside>
-
-      <a
-        href="#about"
-        class="scroll-indicator"
-        aria-label="Découvrir la suite"
-      >
-
-        <span>Découvrir</span>
-
-        <span class="scroll-indicator__line" aria-hidden="true"></span>
-
+      <a href="#studio" class="editorial-hero__scroll">
+        Faire défiler
+        <span></span>
       </a>
 
     </section>
 
     <!-- =====================================================
-         À PROPOS
+         STUDIO / À PROPOS
     ====================================================== -->
 
-    <section class="about section reveal" id="about">
+    <section class="studio" id="studio">
 
-      <div class="section__header">
+      <div class="studio__side">
 
-        <p class="section__label">
-          À propos
-        </p>
-
-        <p class="section__number">
-          01
-        </p>
+        <span>01</span>
+        <p>Studio</p>
 
       </div>
 
-      <div class="about__grid">
+      <div class="studio__content reveal">
 
-        <p class="about__lead">
+        <p class="studio__lead">
           Concevoir des espaces qui portent une émotion,
           une histoire et une intention.
         </p>
 
-        <div class="about__details">
+        <div class="studio__text">
 
           <p>
             Étudiante en design d’espace et scénographie de luxe,
-            je développe une approche sensible fondée sur la matière,
-            la lumière et la compréhension des usages.
+            je développe une approche sensible guidée par les matières,
+            les formes, la lumière et les usages.
           </p>
 
           <p>
-            J’aime expérimenter les formes et les textures afin de créer
-            des projets porteurs de sens, capables de transmettre des
-            valeurs fortes et de laisser une empreinte durable.
+            J’aime expérimenter et créer des projets porteurs de sens,
+            capables de transmettre des valeurs fortes et de laisser
+            une empreinte durable.
           </p>
-
-          <a href="portfolio.html" class="text-link">
-
-            Découvrir ma démarche
-
-            <span aria-hidden="true">↗</span>
-
-          </a>
 
         </div>
 
@@ -268,22 +211,20 @@
     </section>
 
     <!-- =====================================================
-         PHRASE MANIFESTE
+         PHRASE ÉDITORIALE
     ====================================================== -->
 
-    <section class="statement reveal" aria-label="Vision">
+    <section class="manifesto reveal">
 
-      <p class="statement__small">
-        Ma vision
+      <div class="manifesto__line"></div>
+
+      <p>
+        Créer des lieux qui se vivent
       </p>
 
-      <h2>
-
-        Créer des lieux qui se vivent
-
-        <span>autant qu’ils se regardent.</span>
-
-      </h2>
+      <span>
+        autant qu’ils se regardent.
+      </span>
 
     </section>
 
@@ -291,318 +232,275 @@
          PROJETS
     ====================================================== -->
 
-    <section class="projects-section section" id="projects">
+    <section class="projects" id="projects">
 
-      <div class="section__header reveal">
+      <div class="projects__heading">
 
-        <p class="section__label">
-          Projets sélectionnés
-        </p>
-
-        <p class="section__number">
-          02
-        </p>
-
-      </div>
-
-      <div class="projects-list">
-
-        <!-- =================================================
-             PROJET 1 — NAYKA
-        ================================================== -->
-
-        <article class="project reveal">
-
-          <a href="nayka.html" class="project__link">
-
-            <div class="project__media">
-
-              <img
-                src="assets/projects/nayka.jpg"
-                alt="Projet Nayka de Carla Ducrocq"
-                class="project__image"
-                loading="lazy"
-              >
-
-              <div class="project__overlay" aria-hidden="true"></div>
-
-              <span class="project__discover">
-                Découvrir
-              </span>
-
-            </div>
-
-            <div class="project__information">
-
-              <div class="project__meta">
-
-                <span>01</span>
-
-                <span>
-                  Architecture intérieure · Projet en partenariat
-                </span>
-
-              </div>
-
-              <h3>
-                Nayka
-              </h3>
-
-              <div class="project__footer">
-
-                <p>
-                  Un espace d’accueil et de reconstruction pensé
-                  comme un cocon protecteur pour les femmes
-                  en situation de vulnérabilité.
-                </p>
-
-                <span class="project__arrow" aria-hidden="true">
-                  ↗
-                </span>
-
-              </div>
-
-            </div>
-
-          </a>
-
-        </article>
-
-        <!-- =================================================
-             PROJET 2 — WES ANDERSON
-        ================================================== -->
-
-        <article class="project reveal">
-
-          <a href="wes-anderson.html" class="project__link">
-
-            <div class="project__media">
-
-              <img
-                src="assets/projects/wes-anderson.jpg"
-                alt="Projet scénographique Wes Anderson de Carla Ducrocq"
-                class="project__image"
-                loading="lazy"
-              >
-
-              <div class="project__overlay" aria-hidden="true"></div>
-
-              <span class="project__discover">
-                Découvrir
-              </span>
-
-            </div>
-
-            <div class="project__information">
-
-              <div class="project__meta">
-
-                <span>02</span>
-
-                <span>
-                  Scénographie · Exposition immersive
-                </span>
-
-              </div>
-
-              <h3>
-                Wes Anderson
-              </h3>
-
-              <div class="project__footer">
-
-                <p>
-                  Une exposition cinématographique immersive
-                  traduisant spatialement les compositions,
-                  les couleurs et la narration du réalisateur.
-                </p>
-
-                <span class="project__arrow" aria-hidden="true">
-                  ↗
-                </span>
-
-              </div>
-
-            </div>
-
-          </a>
-
-        </article>
-
-        <!-- =================================================
-             PROJET 3 — IRISH PUB
-        ================================================== -->
-
-        <article class="project reveal">
-
-          <a href="irish-pub.html" class="project__link">
-
-            <div class="project__media">
-
-              <img
-                src="assets/projects/irish-pub.jpg"
-                alt="Projet Irish Pub de Carla Ducrocq"
-                class="project__image"
-                loading="lazy"
-              >
-
-              <div class="project__overlay" aria-hidden="true"></div>
-
-              <span class="project__discover">
-                Découvrir
-              </span>
-
-            </div>
-
-            <div class="project__information">
-
-              <div class="project__meta">
-
-                <span>03</span>
-
-                <span>
-                  Architecture intérieure · ERP
-                </span>
-
-              </div>
-
-              <h3>
-                Irish Pub
-              </h3>
-
-              <div class="project__footer">
-
-                <p>
-                  Un lieu convivial et chaleureux conçu autour
-                  de l’accessibilité, de la sécurité et d’une
-                  identité visuelle authentique.
-                </p>
-
-                <span class="project__arrow" aria-hidden="true">
-                  ↗
-                </span>
-
-              </div>
-
-            </div>
-
-          </a>
-
-        </article>
-
-      </div>
-
-      <div class="projects-section__footer reveal">
+        <div>
+          <span>02</span>
+          <p>Projets sélectionnés</p>
+        </div>
 
         <p>
-          Découvrez également les projets Empreintes,
-          La femme qui se cognait dans les portes,
-          Vannerie, Caron et Menuiseries.
+          Architecture intérieure, scénographie,
+          conception et représentation.
         </p>
 
-        <a href="portfolio.html" class="button button--brown">
+      </div>
 
-          <span>Voir le portfolio complet</span>
+      <!-- Projet 1 -->
+      <article class="editorial-project editorial-project--left reveal">
 
-          <span aria-hidden="true">↗</span>
+        <div class="editorial-project__image">
+
+          <a href="nayka.html">
+
+            <img
+              src="assets/projects/nayka.jpg"
+              alt="Projet Nayka de Carla Ducrocq"
+              loading="lazy"
+            >
+
+          </a>
+
+        </div>
+
+        <div class="editorial-project__content">
+
+          <div class="editorial-project__meta">
+
+            <span>01</span>
+
+            <span>
+              Architecture intérieure
+            </span>
+
+          </div>
+
+          <h2>
+            Nayka
+          </h2>
+
+          <p>
+            Un lieu d’accueil conçu comme un cocon protecteur
+            pour accompagner des femmes en situation de vulnérabilité
+            et leurs enfants.
+          </p>
+
+          <div class="editorial-project__details">
+
+            <span>Ville de Nice</span>
+            <span>CCAS · CHU</span>
+            <span>Projet en partenariat</span>
+
+          </div>
+
+          <a href="nayka.html" class="editorial-link">
+            Voir le projet
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- Projet 2 -->
+      <article class="editorial-project editorial-project--right reveal">
+
+        <div class="editorial-project__content">
+
+          <div class="editorial-project__meta">
+
+            <span>02</span>
+
+            <span>
+              Scénographie
+            </span>
+
+          </div>
+
+          <h2>
+            Wes Anderson
+          </h2>
+
+          <p>
+            Une exposition immersive traduisant spatialement
+            les couleurs, les cadrages, les symétries et
+            la narration cinématographique du réalisateur.
+          </p>
+
+          <div class="editorial-project__details">
+
+            <span>Exposition immersive</span>
+            <span>Scénographie culturelle</span>
+            <span>Nice</span>
+
+          </div>
+
+          <a href="wes-anderson.html" class="editorial-link">
+            Voir le projet
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+        <div class="editorial-project__image">
+
+          <a href="wes-anderson.html">
+
+            <img
+              src="assets/projects/wes-anderson.jpg"
+              alt="Projet Wes Anderson de Carla Ducrocq"
+              loading="lazy"
+            >
+
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- Projet 3 -->
+      <article class="feature-project reveal">
+
+        <a href="irish-pub.html" class="feature-project__image">
+
+          <img
+            src="assets/projects/irish-pub.jpg"
+            alt="Projet Irish Pub de Carla Ducrocq"
+            loading="lazy"
+          >
+
+          <div class="feature-project__overlay"></div>
+
+          <div class="feature-project__title">
+
+            <span>03 · Architecture intérieure</span>
+
+            <h2>
+              Irish Pub
+            </h2>
+
+          </div>
 
         </a>
 
-      </div>
+        <div class="feature-project__footer">
+
+          <p>
+            Un projet où l’identité du lieu, les normes ERP,
+            l’accessibilité et la convivialité sont pensées
+            comme un ensemble cohérent.
+          </p>
+
+          <a href="irish-pub.html" class="editorial-link">
+            Découvrir
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </article>
 
     </section>
 
     <!-- =====================================================
-         EXPLORER
+         AUTRES PROJETS
     ====================================================== -->
 
-    <section class="explore section">
+    <section class="archive">
 
-      <div class="section__header reveal">
+      <div class="archive__heading reveal">
 
-        <p class="section__label">
-          Explorer
-        </p>
+        <span>03</span>
 
-        <p class="section__number">
-          03
-        </p>
+        <h2>
+          Autres recherches
+        </h2>
 
       </div>
 
-      <div class="explore__grid">
+      <div class="archive__list">
 
-        <!-- Portfolio -->
+        <a href="portfolio.html" class="archive__item reveal">
 
-        <article class="explore-card reveal">
+          <span>01</span>
 
-          <div class="explore-card__number">
-            01
-          </div>
+          <strong>
+            Empreintes
+          </strong>
 
-          <div>
+          <em>
+            Expression plastique
+          </em>
 
-            <p class="explore-card__label">
-              Portfolio
-            </p>
+          <span>↗</span>
 
-            <h2>
-              Une sélection complète de projets et d’expérimentations.
-            </h2>
+        </a>
 
-            <p class="explore-card__text">
-              Plans, coupes, rendus, recherches plastiques,
-              scénographies, projets de mobilier et expériences
-              professionnelles.
-            </p>
+        <a href="portfolio.html" class="archive__item reveal">
 
-          </div>
+          <span>02</span>
 
-          <a href="portfolio.html" class="text-link">
+          <strong>
+            La femme qui se cognait dans les portes
+          </strong>
 
-            Ouvrir le portfolio
+          <em>
+            Film · Expression plastique
+          </em>
 
-            <span aria-hidden="true">↗</span>
+          <span>↗</span>
 
-          </a>
+        </a>
 
-        </article>
+        <a href="portfolio.html" class="archive__item reveal">
 
-        <!-- CV -->
+          <span>03</span>
 
-        <article class="explore-card reveal">
+          <strong>
+            Vannerie
+          </strong>
 
-          <div class="explore-card__number">
-            02
-          </div>
+          <em>
+            Artisanat · Matière
+          </em>
 
-          <div>
+          <span>↗</span>
 
-            <p class="explore-card__label">
-              Curriculum Vitae
-            </p>
+        </a>
 
-            <h2>
-              Formation, expériences et compétences.
-            </h2>
+        <a href="portfolio.html" class="archive__item reveal">
 
-            <p class="explore-card__text">
-              École Condé, expériences en architecture,
-              menuiserie-ébénisterie, restauration et maîtrise
-              des principaux logiciels de conception.
-            </p>
+          <span>04</span>
 
-          </div>
+          <strong>
+            Caron
+          </strong>
 
-          <a href="cv.html" class="text-link">
+          <em>
+            Paysage · Conception
+          </em>
 
-            Consulter mon CV
+          <span>↗</span>
 
-            <span aria-hidden="true">↗</span>
+        </a>
 
-          </a>
+        <a href="portfolio.html" class="archive__item reveal">
 
-        </article>
+          <span>05</span>
+
+          <strong>
+            Menuiseries
+          </strong>
+
+          <em>
+            Mobilier · Détails techniques
+          </em>
+
+          <span>↗</span>
+
+        </a>
 
       </div>
 
@@ -612,66 +510,68 @@
          COMPÉTENCES
     ====================================================== -->
 
-    <section class="skills section reveal">
+    <section class="expertise">
 
-      <div class="section__header">
+      <div class="expertise__title reveal">
 
-        <p class="section__label">
-          Savoir-faire
-        </p>
+        <span>04</span>
 
-        <p class="section__number">
-          04
-        </p>
+        <h2>
+          Expertise
+        </h2>
 
       </div>
 
-      <div class="skills__grid">
+      <div class="expertise__content">
 
-        <div class="skills__intro">
-
-          <h2>
-            De l’intention créative à la précision technique.
-          </h2>
+        <div class="expertise__intro reveal">
 
           <p>
-            Une approche globale associant conception,
-            représentation, narration et attention portée
-            aux matériaux.
+            Une approche globale, de l’intention créative
+            à la précision technique.
           </p>
 
         </div>
 
-        <div class="skills__list">
+        <div class="expertise__columns">
 
-          <div class="skill-row">
-            <span>01</span>
-            <strong>Architecture intérieure</strong>
+          <div class="expertise__column reveal">
+
+            <span>Conception</span>
+
+            <ul>
+              <li>Architecture intérieure</li>
+              <li>Scénographie</li>
+              <li>Design de mobilier</li>
+              <li>Recherche matière</li>
+            </ul>
+
           </div>
 
-          <div class="skill-row">
-            <span>02</span>
-            <strong>Scénographie</strong>
+          <div class="expertise__column reveal">
+
+            <span>Technique</span>
+
+            <ul>
+              <li>Plans et coupes</li>
+              <li>Détails constructifs</li>
+              <li>Normes ERP</li>
+              <li>Accessibilité PMR</li>
+            </ul>
+
           </div>
 
-          <div class="skill-row">
-            <span>03</span>
-            <strong>Plans et détails techniques</strong>
-          </div>
+          <div class="expertise__column reveal">
 
-          <div class="skill-row">
-            <span>04</span>
-            <strong>Modélisation et rendus 3D</strong>
-          </div>
+            <span>Logiciels</span>
 
-          <div class="skill-row">
-            <span>05</span>
-            <strong>Recherche matière</strong>
-          </div>
+            <ul>
+              <li>AutoCAD</li>
+              <li>SketchUp</li>
+              <li>D5 Render</li>
+              <li>InDesign · Photoshop</li>
+            </ul>
 
-          <div class="skill-row">
-            <span>06</span>
-            <strong>Design de mobilier</strong>
           </div>
 
         </div>
@@ -681,32 +581,27 @@
     </section>
 
     <!-- =====================================================
-         LOGICIELS
+         CTA PORTFOLIO
     ====================================================== -->
 
-    <section class="software section reveal">
+    <section class="portfolio-callout reveal">
 
-      <div class="section__header">
+      <p>
+        Portfolio complet
+      </p>
 
-        <p class="section__label">
-          Logiciels
-        </p>
+      <h2>
+        Découvrir l’ensemble des projets,
+        recherches, plans et expérimentations.
+      </h2>
 
-        <p class="section__number">
-          05
-        </p>
+      <a href="portfolio.html" class="portfolio-callout__link">
 
-      </div>
+        Ouvrir le portfolio
 
-      <div class="software__list">
+        <span aria-hidden="true">↗</span>
 
-        <span>AutoCAD</span>
-        <span>SketchUp</span>
-        <span>D5 Render</span>
-        <span>InDesign</span>
-        <span>Photoshop</span>
-
-      </div>
+      </a>
 
     </section>
 
@@ -714,35 +609,34 @@
          CONTACT
     ====================================================== -->
 
-    <section class="contact section reveal" id="contact">
+    <section class="contact" id="contact">
 
-      <div class="section__header">
+      <div class="contact__intro reveal">
 
-        <p class="section__label">
+        <span>05</span>
+
+        <p>
           Contact
-        </p>
-
-        <p class="section__number">
-          06
         </p>
 
       </div>
 
-      <div class="contact__grid">
+      <div class="contact__main">
 
-        <div>
+        <div class="contact__title reveal">
 
-          <p class="contact__eyebrow">
-            Parlons de votre projet
+          <p>
+            Un projet,
           </p>
 
           <h2>
-            Imaginer ensemble des espaces sensibles et singuliers.
+            une collaboration,
+            une rencontre.
           </h2>
 
         </div>
 
-        <div class="contact__links">
+        <div class="contact__details reveal">
 
           <a href="mailto:carla.ducrocq@mail-edc.com">
 
@@ -752,7 +646,7 @@
               carla.ducrocq@mail-edc.com
             </strong>
 
-            <span aria-hidden="true">↗</span>
+            <span>↗</span>
 
           </a>
 
@@ -761,10 +655,10 @@
             <span>Parcours</span>
 
             <strong>
-              Consulter le CV
+              Consulter mon CV
             </strong>
 
-            <span aria-hidden="true">↗</span>
+            <span>↗</span>
 
           </a>
 
@@ -779,7 +673,7 @@
               Télécharger le portfolio
             </strong>
 
-            <span aria-hidden="true">↓</span>
+            <span>↓</span>
 
           </a>
 
@@ -791,46 +685,39 @@
 
   </main>
 
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
+  <!-- Footer -->
   <footer class="footer">
 
-    <div class="footer__top">
-
-      <a href="index.html" class="footer__brand">
-        Carla Ducrocq
-      </a>
-
-      <a href="#" class="footer__top-link">
-
-        Retour en haut
-
-        <span aria-hidden="true">↑</span>
-
-      </a>
-
+    <div class="footer__brand">
+      Carla Ducrocq
     </div>
 
-    <div class="footer__bottom">
+    <div class="footer__meta">
 
       <span>
-        © <span id="current-year">2026</span> Carla Ducrocq
+        Architecture intérieure
       </span>
 
       <span>
-        Architecture intérieure · Scénographie de luxe
+        Scénographie de luxe
+      </span>
+
+      <span>
+        © <span id="current-year">2026</span>
       </span>
 
     </div>
+
+    <a href="#" class="footer__back">
+      Retour en haut ↑
+    </a>
 
   </footer>
 
   <noscript>
 
     <div class="noscript-message">
-      Activez JavaScript pour profiter pleinement des animations du site.
+      Activez JavaScript pour profiter pleinement du site.
     </div>
 
   </noscript>
