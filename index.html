@@ -1,121 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Portfolio de Carla Ducrocq">
-  <meta name="theme-color" content="#f4f1eb">
-  <title>Portfolio — Carla Ducrocq</title>
-  <style>
-    :root{
-      color-scheme: light;
-      --bg:#f4f1eb;
-      --ink:#161616;
-      --muted:#6d6962;
-      --line:rgba(22,22,22,.14);
-      --panel:#fff;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
-    body{display:flex;flex-direction:column}
-    header{
-      min-height:70px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      padding:16px 24px;
-      border-bottom:1px solid var(--line);
-      background:rgba(244,241,235,.94);
-      backdrop-filter:blur(12px);
-    }
-    .identity{display:flex;flex-direction:column;gap:3px}
-    .identity strong{font-size:15px;font-weight:600;letter-spacing:.02em}
-    .identity span{font-size:12px;color:var(--muted)}
-    .actions{display:flex;gap:10px;flex-wrap:wrap}
-    .button{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:40px;
-      padding:0 14px;
-      border:1px solid var(--ink);
-      border-radius:999px;
-      color:var(--ink);
-      text-decoration:none;
-      font-size:13px;
-      transition:.2s ease;
-      background:transparent;
-    }
-    .button:hover{background:var(--ink);color:#fff}
-    main{
-      flex:1;
-      min-height:0;
-      padding:16px;
-      display:flex;
-    }
-    .viewer{
-      flex:1;
-      min-height:calc(100vh - 103px);
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:14px;
-      overflow:hidden;
-      box-shadow:0 12px 40px rgba(0,0,0,.05);
-    }
-    iframe{width:100%;height:100%;min-height:calc(100vh - 105px);border:0;display:block;background:#fff}
-    .mobile-fallback{display:none}
-    @media (max-width:700px){
-      header{padding:14px 16px;align-items:flex-start;flex-direction:column}
-      .actions{width:100%}
-      .button{flex:1}
-      main{padding:10px}
-      .viewer{min-height:calc(100vh - 150px);border-radius:10px}
-      iframe{min-height:calc(100vh - 152px)}
-    }
-    @media (max-width:520px){
-      iframe{display:none}
-      .viewer{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        padding:28px;
-      }
-      .mobile-fallback{
-        display:flex;
-        max-width:360px;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-        gap:16px;
-      }
-      .mobile-fallback h1{font-size:28px;margin:0}
-      .mobile-fallback p{margin:0;color:var(--muted);line-height:1.5}
-      .mobile-fallback .button{width:100%;flex:none}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio — Carla Ducrocq</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#fff}
+iframe{display:block;width:100%;height:100%;border:0}
+</style>
 </head>
 <body>
-  <header>
-    <div class="identity">
-      <strong>Carla Ducrocq</strong>
-      <span>Portfolio</span>
-    </div>
-    <div class="actions">
-      <a class="button" href="portfolio.pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
-      <a class="button" href="portfolio.pdf" download>Télécharger</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="viewer" aria-label="Portfolio de Carla Ducrocq">
-      <iframe src="portfolio.pdf#view=FitH" title="Portfolio de Carla Ducrocq"></iframe>
-      <div class="mobile-fallback">
-        <h1>Portfolio</h1>
-        <p>Sur mobile, ouvre le portfolio directement en plein écran pour une lecture plus confortable.</p>
-        <a class="button" href="portfolio.pdf" target="_blank" rel="noopener">Voir le portfolio</a>
-      </div>
-    </section>
-  </main>
+<iframe src="portfolio.pdf#view=FitH&toolbar=1" title="Portfolio de Carla Ducrocq"></iframe>
 </body>
 </html>
